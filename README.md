@@ -84,3 +84,20 @@ The data preprocessing and validation processes ensured that the dataset is clea
 If you have any questions or would like to contribute, feel free to raise an issue or open a pull request!
 
 ## http://localhost:8888/lab/tree/Data%20processing%20%26%20Data%20validation
+
+## 5. Today's Task - 2024-09-28
+**Task Description**: Completed data visualization for customer behavior analysis.
+
+**Steps Taken**:
+1. Grouped the dataset by `Gender` and `EducationLevel` and aggregated the order quantities.
+2. Created a bar plot to visualize total order quantity by gender and education level using Seaborn.
+
+```python
+customer_behavior = merged_sales_customers_df.groupby(['Gender', 'EducationLevel'])['OrderQuantity'].agg(['mean', 'sum', 'count']).reset_index()
+plt.figure(figsize=(12, 6))
+sns.barplot(data=customer_behavior, x='Gender', y='sum', hue='EducationLevel')
+plt.title('Total Order Quantity by Gender and Education Level')
+plt.show()
+
+##Outcome: Successfully visualized customer behavior trends, which will help in targeted marketing strategies.
+
