@@ -122,3 +122,11 @@ The next task is to analyze the visualized data for insights and summarize the f
 For more detailed data exploration, you can view the Python analysis in the following file:
 
 [AdventureWorks Data Exploration](http://localhost:8888/notebooks/AdventureWorks_Data_Exploration.ipynb)
+
+## Customer Segmentation
+
+The customer segmentation script analyzes customer behavior by segmenting them based on their purchasing power and order frequency. The script uses the following steps:
+- Conversion of annual income into a numerical value.
+- Calculation of total order quantity and average annual income.
+- Segmentation into low, medium, and high spending power.
+- Visualization of the spending power distribution using plots.
